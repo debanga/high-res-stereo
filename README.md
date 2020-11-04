@@ -1,6 +1,23 @@
 # Hierarchical Deep Stereo Matching on High Resolution Images
 ### [[project webpage](http://www.contrib.andrew.cmu.edu/~gengshay/cvpr19stereo)]
 
+```
+Personal tests
+--------------
+
+1. Create a test folder /data-mbtest/mytest/
+
+2. Add a calib.txt file (ref: https://github.com/gengshan-y/high-res-stereo/issues/5)
+
+3. Add rectified img0.png, img1.png
+
+4. Run:
+$ python submission.py --datapath ./data-mbtest/   --outdir ./mboutput --loadmodel ./weights/final-768px.tar  --testres 0.7 --clean 20 --max_disp 2000
+
+```
+
+
+
 <img src="./architecture.png" width="800">
 
 Qualitative results on Middlebury:
